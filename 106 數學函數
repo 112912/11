@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class luna {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        int i = 1 ;
+        
+        while (i<5) {
+            double x =scn.nextDouble();
+            double anser=3*Math.pow(x,3)+2*x-1;
+            System.out.printf("f(%.1f)=%.4f",x,anser);
+            
+            i++;
+            
+        }
+        
+    }
+}
