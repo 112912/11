@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class luna {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.print("請輸入第1組的x和y座標:");  
+         int x1= scn.nextInt();
+         int y1= scn.nextInt();
+         System.out.print("請輸入第2組的x和y座標:");  
+         int x2= scn.nextInt();
+         int y2= scn.nextInt();
+         double d =Math.pow(x2-x1,2)+Math.pow(y2-y1,2);
+         double d1 =Math.sqrt(d);
+         System.out.printf("介於(%.2f,%.2f)和(%.2f,%.2f) 之間的距離是%.2f",(float)x1,(float)y1,(float)x2,(float)y2,(float)d1);
+          
+        }
+        
+    }
