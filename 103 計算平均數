@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class luna {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.println("Please input:");
+         int a= scn.nextInt();
+         int b= scn.nextInt();
+         int c= scn.nextInt();
+         double d =a+b+c;
+         System.out.printf("Average: %.2f",(float)d/3);   
+        }
+        
+    }
