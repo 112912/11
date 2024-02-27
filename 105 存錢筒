@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class luna {
+
+    public static void main(String[] args) {
+        Scanner scn = new Scanner(System.in);
+        System.out.print("請輸入你的名字:");  
+         String name = scn.next();
+         System.out.println("Hi,"+name+"請輸入你銅板的個數:"); 
+         System.out.print("請輸入1元的數目:"); 
+         int one= scn.nextInt();
+         System.out.print("請輸入5元的數目:"); 
+         int five= scn.nextInt();
+         System.out.print("請輸入10元的數目:"); 
+         int ten= scn.nextInt();
+         System.out.print("請輸入50元的數目:"); 
+         int fivety= scn.nextInt();
+         int anser =one*1+five*5+ten*10+fivety*50;
+         
+         
+         System.out.printf("你的錢總共有: %d 千 %d 百 %d 十 %d 元",anser/1000,anser/100%10,anser/10%10,anser/1%10);
+          
+        }
+        
+    }
