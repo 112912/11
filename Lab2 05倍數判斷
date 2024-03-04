@@ -1,0 +1,26 @@
+import java.util.Scanner;
+public class Hello_java {
+
+    public static void main(String[] args) {
+        Scanner scn =new Scanner(System.in);
+        
+        
+
+        for (int i=1;i<5;i=i+1) { 
+            System.out.println("Enter an interger:");
+            int A= scn.nextInt();
+            
+            if (A%2 == 0 && A%3==0 && A%6==0) {
+                System.out.println(A+"是2、3、6的倍數");
+                
+
+                
+            }else if(A%3==0 ){
+                System.out.println(A+"是3的倍數");
+            }else if(A%2==0 ){
+                System.out.println(A+"是2的倍數");
+            }else {
+                System.out.println(A+"不是2、3、6的倍數");
+            }    
+            
+        }
