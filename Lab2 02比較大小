@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Hello_java {
+
+    public static void main(String[] args) {
+        Scanner scn =new Scanner(System.in);
+        
+        
+
+        for (int i=1;i<3;i=i+1) { 
+            System.out.println("Input:");
+            int A= scn.nextInt();
+            int B= scn.nextInt();
+            if (A>B) {
+                System.out.println(A+" is larger than "+B);
+                
+
+                
+            }else{
+                System.out.println(B+" is larger than "+A);
+            }
+            
+        }
