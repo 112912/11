@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Hello_java {
+
+    public static void main(String[] args) {
+        Scanner scn =new Scanner(System.in);
+        
+        
+
+        for (int i=1;i<5;i=i+1) { 
+           System.out.print("請輸入三角形的三個整數:");
+           int A = scn.nextInt();
+           int B = scn.nextInt();
+           int C = scn.nextInt();
+           
+           int A2 =(int)Math.pow(A,2);
+           int B2 =(int)Math.pow(B,2);
+           int C2 =(int)Math.pow(C,2);
+           if ((A+B)<C || (A+C)<B || (C+B)<A) {
+                System.out.println("不可以構成三角形");
+           
+            }else if ((A2+B2)==C2 || (A2+C2)==B2 || (C2+B2)==A2) {
+                System.out.println("直角三角形");
+            }else if ((A2+B2)<C2 || (A2+C2)<B2 || (C2+B2)<A2) {
+                System.out.println("鈍角三角形");
+            }else if ((A2+B2)>C2 || (A2+C2)>B2 || (C2+B2)>A2) {
+                System.out.println("銳角三角形");
+            }
+
+                
+            
+            
+        }
